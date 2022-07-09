@@ -27,3 +27,27 @@ long wczytajLiczbe(ifstream &plik, int n)
         }
     }
 }
+
+int main()
+{
+    string nazwaPliku;
+    ifstream Plik;
+    uchar bufor[4];   
+    long a;  
+    string poczNag;  
+    char wybor;
+
+
+
+    cout << "Wszystkie metadane liczbowe podawane sa " <<
+            "w systemie dziesietnym." << endl;
+    cout << endl << endl;
+
+
+
+    /* pobranie nazwy pliku */
+
+    cout << "Podaj nazwe pliku BMP:  ";
+    cin >> nazwaPliku;
+    while (cin.get() != '\n')  ;
+    cout << endl << endl;
