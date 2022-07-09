@@ -51,3 +51,19 @@ int main()
     cin >> nazwaPliku;
     while (cin.get() != '\n')  ;
     cout << endl << endl;
+
+     /* otwarcie pliku */
+
+    Plik.open(nazwaPliku.c_str(), ios::in|ios::binary);
+
+
+    /* weryfikacja poprawnego otwarcia pliku */
+
+    if (! Plik.is_open())
+    {
+        cout << "--- Nie dalo sie otworzyc pliku!" << endl;
+        cout << endl;
+        cout << "Nacisnij <ENTER>, aby zakonczyc program... ";
+        cin.get();
+        return 0;
+    }
